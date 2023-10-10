@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lalezar&family=Orbitron&family=PT+Serif:wght@700&family=Poppins:ital,wght@1,200&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(201, 48, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 48, 48, 1) 33%,
+    rgba(138, 96, 35, 1) 66%
+  );
+  min-height: 100vh;
+}
+.container {
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.container .menu {
+  padding: 0 10px;
+}
+.menu .item {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menu .item i {
+  padding-right: 10px;
+}
+.menu .item:hover {
+  background: #f2f2f2;
+}
+.menu .setting {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+.menu .share {
+  position: relative;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .share .share-menu {
+  position: absolute;
+  width: 170px;
+  left: 260px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 10px 5px;
+  visibility: hidden;
+}
+.menu .share:hover .share-menu {
+  visibility: visible;
+}
